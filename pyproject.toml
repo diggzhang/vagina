@@ -1,0 +1,28 @@
+[project]
+name = "vagina"
+version = "0.1.2"
+description = "Procedural Organic ASCII Vagina Art Generator"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "diggzhang" }
+]
+license = { text = "MIT" }
+keywords = ["ascii", "cli", "art", "generator", "procedural"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Topic :: Artistic Software",
+  "Topic :: Utilities",
+]
+
+[project.scripts]
+vagina = "vagina.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.8.13,<0.9.0"]
+build-backend = "uv_build"
